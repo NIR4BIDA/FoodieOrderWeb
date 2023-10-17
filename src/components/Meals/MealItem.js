@@ -17,7 +17,7 @@ const MealItem = (props) => {
     const price=`$${props.meal.price.toFixed(2)}`
     return(
     <Fragment>
-        <li className={classes.meal}>
+        <li key={props.meal.id} className={classes.meal}>
             <div>
                 <div><h3>{props.meal.name}</h3></div>
                 <div className={classes.description}>{props.meal.description}</div>
